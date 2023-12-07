@@ -25,7 +25,7 @@ class Storage {
 	}
 
 	removeItem(itemToRemove) {
-		// this.#items.splice(this.#items.indexOf(itemToRemove), 1);
+		// this.#items.splice(this.#items.indexOf(itemToRemove), 1); буде помилка якщо не знайде елемент
 		this.#items = this.#items.filter(item => item !== itemToRemove);
 	}
 }
